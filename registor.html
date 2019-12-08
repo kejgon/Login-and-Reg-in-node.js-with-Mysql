@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <style>
+
+        h2{
+            margin: auto;
+            color: #fff;
+            width:30%;
+            margin-top: 100px;
+            background-color: #222e45;
+            padding: 20px 50px;
+            font-family: sans-serif;
+            box-shadow: 10px 12px 13px -6px rgba(0,138,173,0.42);
+
+
+        }
+        form{
+            width: 30%;
+            margin: auto;
+            margin-top: 10px;
+            border: 0px solid ;
+            padding: 50px;
+            box-shadow: 10px 12px 13px -6px rgba(0,138,173,0.42);
+
+        }
+
+        label{
+            display:block;
+            font-size: 15px;
+            padding: 5px;
+            padding-left: 0;
+
+
+
+        }
+
+
+        button{
+            display:block;
+            width: 100px;
+            margin: 20px;
+        }
+        a{
+            text-decoration: none;
+            padding: 2px 30px;
+            margin: 20px;
+            background-color: buttonface;
+            color: #000;
+            border: 1px solid;
+        }
+        button:hover{
+            background: rgba(0,138,173,0.42);
+            box-shadow: 10px 12px 13px -6px rgba(0,138,173,0.42);
+        }
+        a:hover{
+            border: 1px solid gray;
+            background: rgba(0,138,173,0.42);
+            box-shadow: 10px 12px 13px -6px rgba(0,138,173,0.42);
+        }
+    </style>
+    <body>
+        <h2>Register you Details Here!</h2>
+        <form action="/registration" method="GET">
+
+            <label for="">First name:
+                <input type="text" name="fname" value=""> </label>
+            <label for="">Last name:
+                <input type="text" name="lname" value=""></label>
+            <label for="gender">Gender:
+                Male<input type="radio" name="gender" value="male">
+                Female<input type="radio" name="gender" value="female">
+            </label><br>
+
+            <select class="" name="county">
+                <option value="">County</option>
+                <option value="Nairobi">Nairobi</option>
+                <option value="Mombasa">Mombasa</option>
+                <option value="Nakuru">Nakuru</option>
+
+            </select><br><br>
+            <select class="" name="courses">
+                <option value="">Courses</option>
+                <option value="Web Development">Web Development</option>
+                <option value="CEH">CEH</option>
+                <option value="Oracle">Oracle</option>
+
+            </select><br><br>
+            <label for="">Email:
+                <input type="text" name="email" value=""></label>
+            <label for="">Username:
+                <input type="text" name="ursname" value=""></label>
+            <label for="">Password:
+                <input type="password" name="password" value=""></label>
+            <button type="submit" name="button">Registor</button>
+            <a href="login.html" >Login</a>
+
+
+        </form>
+    </body>
+</html>

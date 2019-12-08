@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+
+  <style media="screen">
+    .table-wrapper {
+      margin-top: 50px;
+  }
+  </style>
+
+  <body>
+    <div class="table-wrapper">
+        <% if (players.length > 0) {%>
+            <table class="table table-hovered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">First Name</th>
+                        <th scope="col">Last Name</th>
+                        <th scope="col">Gender</th>
+                        <th scope="col">County</th>
+                        <th scope="col">Courses</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Username</th>
+                        <th scope="col">Password</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        <tr>
+                            <th scope="row"><%= player.id %></th>
+                            <td><img src="/assets/img/<%= player.image %>" class="rounded-circle player-img" alt=""></td>
+                            <td><%= row.fname %></td>
+                            <td><%= lname %></td>
+                            <td><%= gender %></td>
+                            <td><%= county %></td>
+                            <td>@<%= courses %></td>
+                            <td>
+                                <a href="/edit/<%= player.id %>" target="_blank" rel="noopener" class="btn btn-sm btn-success">Edit</a>
+                                <a href="/delete/<%= player.id %>" class="btn btn-sm btn-danger">Delete</a>
+                            </td>
+                        </tr>
+                    <% }) %>
+                </tbody>
+            </table>
+        <% } else { %>
+            <p class="text-center">No players found. Go <a href="/add" >here</a> to add players.</p>
+        <% } %>
+    </div>
+</div>
+  </body>
+</html>

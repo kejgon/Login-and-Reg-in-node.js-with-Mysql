@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <style>
+        h2{
+            margin: auto;
+            color: #fff;
+            width:30%;
+            margin-top: 100px;
+            background-color: #222e45;
+            padding: 20px 50px;
+            font-family: sans-serif;
+           box-shadow: 10px 12px 13px -6px rgba(0,138,173,0.42);
+
+
+        }
+        form{
+            width: 30%;
+            margin: auto;
+            margin-top: 10px;
+            border: 0px solid ;
+            padding: 50px;
+            box-shadow: 10px 12px 13px -6px rgba(0,138,173,0.42);
+
+        }
+
+        label{
+            display:block;
+            font-size: 15px;
+            padding: 5px;
+            padding-left: 0;
+
+
+
+        }
+
+
+        button{
+            display:block;
+            width: 100px;
+            margin: 20px;
+        }
+        a{
+            text-decoration: none;
+            padding: 2px 22px;
+            margin: 20px;
+            background-color: buttonface;
+            color: #000;
+            border: 1px solid;
+        }
+        button:hover{
+            background: rgba(0,138,173,0.42);
+            box-shadow: 10px 12px 13px -6px rgba(0,138,173,0.42);
+        }
+        a:hover{
+            border: 1px solid gray;
+            background: rgba(0,138,173,0.42);
+            box-shadow: 10px 12px 13px -6px rgba(0,138,173,0.42);
+        }
+    </style>
+
+    <body>
+<!-- This is for login  -->
+        <h2>Login Here!</h2>
+
+        <form  action="/login" method="GET">
+
+            <label for="">Username :
+                <input type="text" name="usrname" value=""></label>
+            <label for="">Password :
+                <input type="password" name="password" value=""></label>
+            <button type="submit" name="button">Login</button>
+            <a href="/reg_form">Registor</a>
+        </form>
+
+    </body>
+</html>
